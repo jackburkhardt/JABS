@@ -3,6 +3,8 @@ JABS was a homework assignment for Northwestern CS 376, made in rougly 3-4 days.
 
 This is a simple little game where you (tactically) stack boxes. Stack as many boxes as you can without letting too many fall!
 
+To download, see [Releases](https://github.com/jackburkhardt/JABS/releases).
+
 # Instructions
 When you press Play, you will see a box appear. You can manipulate the box with the following controls:
 
