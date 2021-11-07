@@ -8,9 +8,9 @@ To download, see [Releases](https://github.com/jackburkhardt/JABS/releases).
 # Instructions
 When you press Play, you will see a box appear. You can manipulate the box with the following controls:
 
-Left/Right Arrows -- Move box back and forth
-Up/Down Arrows -- Rotate box
-Space -- Drop box
+- Left/Right Arrows -- Move box back and forth
+- Up/Down Arrows -- Rotate box
+- Space -- Drop box
 
 These boxes are of random size and mass. You earn points if the box stays on the platform/structure without falling for more than 3 seconds.
 Each box has a different "value" towards your score, which is based on physical attributes about the box and a hidden difficulty modifier.
