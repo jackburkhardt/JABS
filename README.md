@@ -1,4 +1,4 @@
-# TNAVN
+# JABS
 JABS was a homework assignment for Northwestern CS 376, made in rougly 3-4 days. Originally the title was TNAVN (Totally Not A Visual Novel) as a play on the rule in the assignment that we could not make visual novels. It sort of stopped making sense as a title after a while, so now it's called JABS (Just Another Box Stacker).
 
 This is a simple little game where you (tactically) stack boxes. Stack as many boxes as you can without letting too many fall!
