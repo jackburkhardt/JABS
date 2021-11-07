@@ -101,20 +101,22 @@ public class GameHandler : MonoBehaviour
     IEnumerator SpawnBox()
     {
         yield return new WaitForSeconds(2f);
-        
-        var newBox = (GameObject)Instantiate(boxPrefab, new Vector3(0, 4 + FindHighestBox(), 0), Quaternion.identity, boxHolder);
+
+        boxSpawnTransform.position = new Vector3(0, 4.5f + FindHighestBox(), 0);
+        var newBox = (GameObject)Instantiate(boxPrefab, boxSpawnTransform.position, Quaternion.identity, boxHolder);
         Transform nbTransform = newBox.transform;
         nbTransform.localScale = new Vector3(Random.Range(1.2f, 8f), Random.Range(1.2f, 8f));
-        newBox.GetComponent<Box>().value = difficulty * nbTransform.localScale.x;
         newBox.GetComponent<Box>().GameManager = this;
-        newBox.GetComponent<Rigidbody2D>().mass = (nbTransform.localScale.x * nbTransform.localScale.y) / (5 / difficulty) ;
+        var newMass = (nbTransform.localScale.x * nbTransform.localScale.y) / (5 / difficulty);
+        newBox.GetComponent<Rigidbody2D>().mass = newMass;
+        newBox.GetComponent<Box>().value = difficulty * (newMass / 2);
         
         nextBox = newBox;
         dropsTillRise -= 1;
         if (dropsTillRise == 0)
         {
-            mainCamera.FollowTransform.position = new Vector3(mainCamera.FollowTransform.position.x,
-                FindHighestBox() - 3, mainCamera.FollowTransform.position.z);
+            mainCamera.FollowTransform.position = new Vector3(0,
+                FindHighestBox() - 4, 0);
             dropsTillRise = 4;
         }
 
@@ -164,6 +166,7 @@ public class GameHandler : MonoBehaviour
         score = 0;
         lives = 3;
         dropsTillRise = 4;
+        difficulty = 1;
         UIManager.scoreText.text = "Score: " + (int)score;
         UIManager.livesText.text = "Lives: " + lives;
         foreach (var box in FindObjectsOfType<Box>())
