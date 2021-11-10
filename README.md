@@ -5,7 +5,7 @@ This is a simple little game where you (tactically) stack boxes. Stack as many b
 
 To download, see [Releases](https://github.com/jackburkhardt/JABS/releases).
 
-# Instructions
+## Instructions
 When you press Play, you will see a box appear. You can manipulate the box with the following controls:
 
 - Left/Right Arrows -- Move box back and forth
@@ -20,10 +20,13 @@ There's also a sliding platform that exists to make your life a little more diff
 
 If a box falls into the void, you lose a life. You have 3 lives before the game ends. You can press "Play" again to restart the game, or use the "Escape" key to quit the program.
 
-# Credits
+## Credits
 Thanks to the following sources:
 
 - Art: Sunny Land Forest by Ansimuz & Sunny Land by Ansimuz
 - Font: VCR OSD Mono by Riciery Leal
 - SFX: FreeSounds.org, a Creative Commons sound library
 - Music: Composed by Lou Stockmeyer, NU '24
+
+## Usage
+You're free to do whatever you want with this project, so long as it remains non-commercial. If you're a current 376 student, please don't use any of this. It's not worth it.
