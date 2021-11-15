@@ -172,7 +172,7 @@ public class GameHandler : MonoBehaviour
         foreach (var box in FindObjectsOfType<Box>())
         {
             Destroy(box.gameObject);
-            Debug.Log("shit just got exploded");
+            //Debug.Log("shit just got exploded");
         }
         
         mainCamera.FollowTransform.position = new Vector3(0, -2, 0); 

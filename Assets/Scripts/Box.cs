@@ -26,7 +26,7 @@ public class Box : MonoBehaviour
         {
             beenChecked = true;
             StartCoroutine(WaitForSafety());
-            Debug.Log(boxRB.mass);
+            //Debug.Log(boxRB.mass);
         }
     }
 

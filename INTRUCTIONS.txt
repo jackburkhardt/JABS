@@ -1,5 +1,8 @@
 This is a simple little game where you (tactically) stack boxes. Stack as many boxes as you can without letting too many fall!
 
+NOTE: In the Game window (that comes up when you press Play), change the resolution at the top of the window from "Free Aspect" to "960p".
+Otherwise you may notice visual issues, as this game was designed for 4:3 aspect ratios.
+
 When you press Play, you will see a box appear. You can manipulate the box with the following controls:
 
 Left/Right Arrows -- Move box back and forth
